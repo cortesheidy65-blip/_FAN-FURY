@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Fury - Nuestro Equipo</title>
+    <link rel="stylesheet" href="Styleprincipal.css">
+    <style>
+        /* Estilos modernos y creativos para la sección de Equipo */
+        body {
+            background-color: #0d0d11;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .equipo-container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Encabezado / Banner inspirador */
+        .equipo-hero {
+            background: linear-gradient(135deg, #17171d 0%, #101014 100%);
+            border: 1px solid #22222d;
+            border-left: 6px solid #dc2626;
+            border-radius: 14px;
+            padding: 40px 30px;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .equipo-hero h1 {
+            color: #ffffff;
+            font-size: 2.3rem;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .equipo-hero h1 span {
+            color: #dc2626;
+        }
+
+        .equipo-hero p {
+            color: #d4d4d8;
+            font-size: 1.05rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Cuadrícula de tarjetas del equipo (Responsive grid) */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        /* Tarjeta individual de cada integrante */
+        .team-card {
+            background-color: #17171d;
+            border: 1px solid #22222d;
+            border-radius: 14px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #dc2626;
+            opacity: 0.8;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            border-color: #dc2626;
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.25);
+        }
+
+        /* Espacio para la fotografía del integrante */
+        .team-photo-wrapper {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            background-color: #101014;
+            border: 3px solid #2f2f3d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: border-color 0.3s ease;
+        }
+
+        .team-card:hover .team-photo-wrapper {
+            border-color: #dc2626;
+        }
+
+        .team-photo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Datos del integrante */
+        .team-name {
+            color: #ffffff;
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .team-role {
+            color: #dc2626;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .team-description {
+            color: #a1a1aa;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* Diseño adaptable para celulares */
+        @media (max-width: 768px) {
+            .equipo-hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN SUPERIOR -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="Logotipo Esports FANFURY (1).png" alt="Logo Fan Fury" class="nav-logo">
+            <span class="brand-name">FAN FURY</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="prototipo.html">Prototipo</a></li>
+                <li><a href="Quienes.html">Quiénes somos</a></li>
+                <li><a href="servicios.html">Nuestros servicios</a></li>
+                <li><a href="proyecto.html">Proyecto</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="mitigacion.html">Producto de mitigación</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="sustentacion.html">Sustentación</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="acceso.html">Web / QR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="equipo-container">
+
+        <!-- BANNER / PRESENTACIÓN -->
+        <div class="equipo-hero">
+            <h1>Nuestro <span>Equipo de Trabajo</span> ⚽🏆</h1>
+            <p>Conoce a los creadores de Fan Fury, estudiantes comprometidos con la investigación, el deporte y la promoción de la convivencia pacífica entre las barras bravas.</p>
+        </div>
+
+        <!-- TARJETAS DE LOS INTEGRANTES -->
+        <div class="team-grid">
+
+            <!-- Integrante 1 -->
+            <div class="team-card">
+                <div class="team-photo-wrapper">
+                    <!-- 📌 RUTA DE IMAGEN: Guarda la foto en la carpeta IMG y ajusta el nombre aquí -->
+                    <img src="dayana.jpeg" alt="Dayana Cortes">
+                </div>
+                <div class="team-name">Dayana Cortes</div>
+                <div class="team-role">Líder de Proyecto / Investigación</div>
+                <div class="team-description">Encargada de la coordinación general, planteamiento del problema y desarrollo de la investigación de grado 11.</div>
+            </div>
+
+            <!-- Integrante 2 -->
+            <div class="team-card">
+                <div class="team-photo-wrapper">
+                   
+                    <img src="dannna.jpeg" alt="danna">
+                </div>
+                <div class="team-name">Danna Lopez</div>
+                <div class="team-role">Desarrollo Web / Prototipo</div>
+                <div class="team-description">Apoyo en la estructuración de la página web, diseño de interfaces y maquetación de los contenidos.</div>
+            </div>
+
+            <!-- Integrante 3 -->
+            <div class="team-card">
+                <div class="team-photo-wrapper">
+                 
+                    <img src="yaxson.jpeg" alt="yaxson">
+                </div>
+                <div class="team-name">Yaxson Coronel</div>
+                <div class="team-role">Análisis de Datos / Encuestas</div>
+                <div class="team-description">Responsable de la aplicación de encuestas, procesamiento de datos estadísticos y gráficas de resultados.</div>
+            </div>
+
+            <!-- Integrante 4 (Puedes agregar o duplicar más tarjetas si lo necesitas) -->
+            <div class="team-card">
+                <div class="team-photo-wrapper">
+                  
+                    <img src="simon.jpeg" alt="Simon Rodriguez">
+                </div>
+                <div class="team-name">Simon Rodriguez</div>
+                <div class="team-role">Mitigación y Comunicación</div>
+                <div class="team-description">Enfoque en el producto digital Fan Fury, estrategias de convivencia y presentación ante los jurados.</div>
+            </div>
+
+        </div>
+
+        <!-- BOTONES DE NAVEGACIÓN INFERIOR -->
+        <div style="margin-top: 40px; display: flex; justify-content: space-between;">
+            <a href="usuarios.html" class="btn-nav" style="background-color: #27272a; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none;">← Usuarios</a>
+            <a href="acceso.html" class="btn-nav" style="background-color: #dc2626; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none;">Web / QR →</a>
+        </div>
+    </main>
+
+</body>
+</html>

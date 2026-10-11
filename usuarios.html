@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Fury - Gestión de Usuarios</title>
+    <link rel="stylesheet" href="Styleprincipal.css">
+    <style>
+        /* Estilos modernos y mejorados para la pantalla de Gestión de Usuarios */
+        body {
+            background-color: #0d0d11;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .usuarios-container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Banner / Encabezado motivador */
+        .usuarios-hero {
+            background: linear-gradient(135deg, #17171d 0%, #101014 100%);
+            border: 1px solid #22222d;
+            border-left: 6px solid #dc2626;
+            border-radius: 14px;
+            padding: 40px 30px;
+            margin-bottom: 35px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .usuarios-hero h1 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .usuarios-hero h1 span {
+            color: #dc2626;
+        }
+
+        .usuarios-hero p {
+            color: #d4d4d8;
+            font-size: 1.05rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Contenedor en dos columnas para Registro e Inicio de Sesión */
+        .forms-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        /* Tarjetas de formularios */
+        .form-card {
+            background-color: #17171d;
+            border: 1px solid #22222d;
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .form-card:hover {
+            border-color: #dc2626;
+        }
+
+        .form-card h2 {
+            color: #ffffff;
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-card .card-subtitle {
+            color: #a1a1aa;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo de los campos de entrada */
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            color: #d4d4d8;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-group input, 
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: #101014;
+            border: 1px solid #2f2f3d;
+            border-radius: 8px;
+            color: #ffffff;
+            font-size: 0.95rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus {
+            outline: none;
+            border-color: #dc2626;
+        }
+
+        /* Contenedor especial para el campo de contraseña con botón de ver/ocultar */
+        .password-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .password-wrapper input {
+            width: 100%;
+            padding-right: 45px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 12px;
+            background: none;
+            border: none;
+            color: #a1a1aa;
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 0;
+        }
+
+        .toggle-password:hover {
+            color: #ffffff;
+        }
+
+        /* Botones de acción principales */
+        .btn-action {
+            width: 100%;
+            background-color: #dc2626;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+        }
+
+        .btn-action:hover {
+            background-color: #b91c1c;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: #27272a;
+            box-shadow: none;
+        }
+
+        .btn-secondary:hover {
+            background-color: #3f3f46;
+        }
+
+        
+        @media (max-width: 768px) {
+            .forms-grid {
+                grid-template-columns: 1fr;
+            }
+            .usuarios-hero h1 {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="Logotipo Esports FANFURY (1).png" alt="Logo Fan Fury" class="nav-logo">
+            <span class="brand-name">FAN FURY</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="prototipo.html">Prototipo</a></li>
+                <li><a href="Quienes.html">Quiénes somos</a></li>
+                <li><a href="servicios.html">Nuestros servicios</a></li>
+                <li><a href="proyecto.html">Proyecto</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="mitigacion.html">Producto de mitigación</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="sustentacion.html">Sustentación</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="acceso.html">Web / QR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main class="usuarios-container">
+
+       
+        <div class="usuarios-hero">
+            <h1>¡Únete al cambio y vive una <span>Pasión sin Violencia</span>! ⚽🔥</h1>
+            <p>Forma parte de la comunidad Fan Fury. Regístrate ahora para acceder a nuestras herramientas de convivencia, conocer más sobre el barrismo social y demostrar que apoyar a tu equipo significa respeto dentro y fuera de la cancha.</p>
+        </div>
+
+       
+        <div class="forms-grid">
+
+            <!-- APARTADO DE REGÍSTRATE AHORA -->
+            <div class="form-card" id="registro-seccion">
+                <h2>📝 Regístrate ahora</h2>
+                <p class="card-subtitle">Crea tu cuenta nueva para formar parte de Fan Fury.</p>
+                
+                
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Carlos Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edad">Edad</label>
+                        <input type="number" id="edad" name="edad" placeholder="Ej. 17" min="10" max="99" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="equipo">Equipo de fútbol favorito</label>
+                        <input type="text" id="equipo" name="equipo" placeholder="Ej. Mi equipo del alma" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="barra">Barra o grupo de apoyo</label>
+                        <input type="text" id="barra" name="barra" placeholder="Nombre de tu barra o hincha independiente">
+                    </div>
+
+                    <button type="submit" class="btn-action">Completar Registro</button>
+                </form>
+            </div>
+
+            <div class="form-card">
+                <h2>🔑 Iniciar sesión</h2>
+                <p class="card-subtitle">Accede a tu cuenta si ya estás registrado.</p>
+
+                
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="login-correo">Correo electrónico</label>
+                        <input type="email" id="login-correo" name="correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Contraseña o clave de acceso</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="login-password" name="password" placeholder="••••••••" required>
+                            <button type="button" class="toggle-password" onclick="togglePasswordVisibility()" title="Mostrar/Ocultar contraseña">👁️</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-action btn-secondary" style="margin-top: 20px;">Entrar a la plataforma</button>
+                </form>
+<div style="margin-top: 35px; background-color: #101014; border: 1px dashed #2f2f3d; padding: 20px; border-radius: 8px; text-align: center;">
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin: 0 0 10px 0;">¿Tienes dudas sobre cómo registrarte?</p>
+                    <a href="proyecto.html" style="color: #dc2626; text-decoration: none; font-weight: bold; font-size: 0.95rem;">Conoce más sobre el proyecto →</a>
+                </div>
+        
+            </div>
+
+        </div>
+
+        
+        <div style="margin-top: 40px; display: flex; justify-content: space-between;">
+            <a href="sustentacion.html" class="btn-nav" style="background-color: #27272a; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none;">← Sustentación</a>
+            <a href="equipo.html" class="btn-nav" style="background-color: #dc2626; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none;">Equipo →</a>
+        </div>
+    </main>
+
+    
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('login-password');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        }
+    </script>
+
+</body>
+</html>

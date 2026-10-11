@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Fury - Resultados</title>
+    <link rel="stylesheet" href="Styleprincipal.css">
+    <style>
+        /* Estilos específicos para la distribución de cuadro con gráfica al lado */
+        .result-card {
+            background-color: #17171d;
+            border: 1px solid #22222d;
+            border-left: 4px solid #dc2626; /* Detalle rojo Fan Fury */
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+        
+        .result-content-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .result-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .result-image-container {
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+            background-color: #101014;
+            border: 1px solid #22222d;
+            border-radius: 8px;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .result-image-container img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            border-radius: 6px;
+        }
+
+        /* Responsivo para celulares: se apilan verticalmente */
+        @media (max-width: 768px) {
+            .result-content-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN SUPERIOR (Manten tu menú habitual aquí) -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="Logotipo Esports FANFURY (1).png" alt="Logo Fan Fury" class="nav-logo">
+            <span class="brand-name">FAN FURY</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="prototipo.html">Prototipo</a></li>
+                <li><a href="Quienes.html">Quiénes somos</a></li>
+                <li><a href="servicios.html">Nuestros servicios</a></li>
+                <li><a href="proyecto.html">Proyecto</a></li>
+                <li><a href="resultados.html">Resultados</a></li>
+                <li><a href="mitigacion.html">Producto de mitigación</a></li>
+                <li><a href="sustentacion.html">Sustentación</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="acceso.html">Web / QR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL DE RESULTADOS -->
+    <main class="section-container" style="max-width: 1100px; margin: 30px auto; padding: 20px;">
+        <h1 style="color: #ffffff; margin-bottom: 25px; text-align: center;">Resultados de la Encuesta</h1>
+
+        <!-- PREGUNTA 1 -->
+        <div class="result-card">
+            <h3 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 15px;">📌 Pregunta 1: Principal causa percibida de las riñas o violencia entre las barras</h3>
+            <div class="result-content-wrapper">
+                <div class="result-text">
+                    <p style="color: #d4d4d8; margin-bottom: 10px;"><strong>De las 33 respuestas válidas:</strong></p>
+                    <ul style="color: #a1a1aa; margin-left: 20px; line-height: 1.6;">
+                        <li><strong>33,3 %</strong> señaló las provocaciones o insultos.</li>
+                        <li><strong>30,3 %</strong> indicó la rivalidad entre equipos.</li>
+                        <li><strong>30,3 %</strong> indicó la influencia de otros integrantes.</li>
+                        <li><strong>6,1 %</strong> señaló otra causa.</li>
+                    </ul>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-top: 15px; font-style: italic;"><strong>Explicación:</strong> Las tres primeras opciones tienen porcentajes muy cercanos, por lo que no es correcto reducir el problema a una sola causa, sino entender que confluyen de manera simultánea.</p>
+                </div>
+                <div class="result-image-container">
+                    <img src="encuesta 3.jpeg" alt="Gráfica Pregunta 1">
+                </div>
+            </div>
+        </div>
+
+        <!-- PREGUNTA 2 -->
+        <div class="result-card">
+            <h3 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 15px;">📌 Pregunta 2: Nivel educativo predominante al ingresar a una barra brava</h3>
+            <div class="result-content-wrapper">
+                <div class="result-text">
+                    <p style="color: #d4d4d8; margin-bottom: 10px;"><strong>Participaron 34 personas:</strong></p>
+                    <ul style="color: #a1a1aa; margin-left: 20px; line-height: 1.6;">
+                        <li><strong>64,7 %</strong> señaló el bachillerato.</li>
+                        <li><strong>23,5 %</strong> señaló técnico o tecnológico.</li>
+                        <li><strong>8,8 %</strong> señaló universidad.</li>
+                        <li>Aproximadamente <strong>2,9 %</strong> señaló primaria.</li>
+                    </ul>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-top: 15px; font-style: italic;"><strong>Explicación:</strong> Este resultado debe interpretarse como la percepción de los encuestados, no como una medición oficial del nivel educativo de los barristas, destacando un fuerte vínculo con la etapa escolar.</p>
+                </div>
+                <div class="result-image-container">
+                    <img src="encuesta 5.jpeg" alt="Gráfica Pregunta 2">
+                </div>
+            </div>
+        </div>
+
+        <!-- PREGUNTA 3 -->
+        <div class="result-card">
+            <h3 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 15px;">📌 Pregunta 3: Influencia de amigos o familiares para ingresar a una barra</h3>
+            <div class="result-content-wrapper">
+                <div class="result-text">
+                    <p style="color: #d4d4d8; margin-bottom: 10px;"><strong>De 34 personas consultadas:</strong></p>
+                    <ul style="color: #a1a1aa; margin-left: 20px; line-height: 1.6;">
+                        <li><strong>44,1 %</strong> respondió entre 1 y 3 amigos o familiares.</li>
+                        <li><strong>41,2 %</strong> respondió entre 4 y 6.</li>
+                    </ul>
+                    <p style="color: #a1a1aa; font-size: 0.9rem; margin-top: 15px; font-style: italic;"><strong>Explicacion:</strong>Explicación: Al sumar ambas opciones, el 85,3 % de los participantes señaló la influencia de entre 1 y 6 amigos o familiares. Esto muestra la importancia que pueden tener las personas cercanas en la decisión de ingresar a una barra brava.</p>
+                </div>
+                <div class="result-image-container">
+                    <img src="encuesta 2.jpeg" alt="Gráfica Pregunta 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- PREGUNTA 4 -->
+        <div class="result-card">
+            <h3 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 15px;">📌 Pregunta 4: Edades con mas presencia de barristas en Bosa</h3>
+            <div class="result-content-wrapper">
+                <div class="result-text">
+                    <p style="color: #d4d4d8; margin-bottom: 10px;"><strong>De las 34 respuestas:</strong></p>
+                    <ul style="color: #a1a1aa; margin-left: 20px; line-height: 1.6;">
+                        <li><strong>41,2 %</strong> señaló el rango de 18 a 20 años.</li>
+<li><strong>29,4 %</strong> indicó el rango de 21 a 23 años.</li>
+<li><strong>20,6 %</strong> señaló el rango de 15 a 17 años.</li>
+<li><strong>8,8 %</strong> indicó el rango de 24 a 26 años.</li>
+                      <p style="color: #a1a1aa; font-size: 0.9rem; margin-top: 15px; font-style: italic;"><strong>Explicación:</strong> El rango de 18 a 20 años obtuvo el porcentaje más alto, con un 41,2 %, seguido del rango de 21 a 23 años, con un 29,4 %. Estos resultados reflejan la percepción de los estudiantes encuestados sobre las edades con mayor presencia de barristas.</p>
+                    </ul>
+                </div>
+                <div class="result-image-container">
+                    <img src="encuesta 4.jpeg" alt="Gráfica Pregunta 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- PREGUNTA 5 -->
+        <div class="result-card">
+            <h3 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 15px;">📌 Pregunta 5: Gravedad de los actos de violencia entre las barras bravas</h3>
+            <div class="result-content-wrapper">
+                <div class="result-text">
+                    <p style="color: #d4d4d8; margin-bottom: 10px;"><strong>Detalles de la encuesta:</strong></p>
+                    <ul style="color: #a1a1aa; margin-left: 20px; line-height: 1.6;">
+                        <li><strong>32,4 %</strong> consideró que la gravedad es muy alta.</li>
+<li><strong>29,4 %</strong> señaló que es media.</li>
+<li><strong>23,5 %</strong> indicó que es baja.</li>
+<li><strong>14,7 %</strong> consideró que es alta.</li>
+                        <p style="color: #a1a1aa; font-size: 0.9rem; margin-top: 15px; font-style: italic;"><strong>Explicación:</strong> El 47,1 % de los participantes calificó la gravedad de los actos violentos entre barras bravas como alta o muy alta. Esto refleja la preocupación por esta problemática y destaca la importancia de Fan Fury para promover el respeto, la convivencia y la pasión por el fútbol sin violencia.</p>
+                    </ul>
+                </div>
+                <div class="result-image-container">
+                    <img src="encuesta 1.jpeg" alt="Gráfica Pregunta 5">
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTONES DE NAVEGACIÓN INFERIOR -->
+        <div style="margin-top: 40px; display: flex; justify-content: space-between;">
+            <a href="proyecto.html" class="btn-nav" style="background-color: #27272a; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none;">← Proyecto</a>
+            <a href="mitigacion.html" class="btn-nav" style="background-color: #dc2626; color: #ffffff; padding: 10px 20px; border-radius: 6px; text-decoration: none;">Producto de mitigación →</a>
+        </div>
+    </main>
+
+</body>
+</html>
